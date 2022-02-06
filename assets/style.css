@@ -1,0 +1,484 @@
+html, body { height: 100% }
+
+::selection{
+    background:#f4a688;
+}
+
+.center-content{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.front-container{
+    background-color:   #202124;
+    color:  white;
+    height: 100%;
+}
+
+.front-image img{
+    border-radius: 50%;
+
+    height: 125px;
+    width: 125px;
+}
+
+.front-head{
+    font-size:  77px;
+    color:#909296;
+    text-align:center;
+}
+
+.front-second-head{
+    color:#909296;
+    text-align:center;
+}
+
+.front-name-box
+{
+    /* height:40%; */
+    padding: 15% 0 3% 0;
+}
+
+.socials-row{
+    margin-bottom:8%;
+}
+.socials ul, .experience-row ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+
+    display:flex;
+
+}
+
+.socials li{
+    margin: 0px 12px 0px 12px;
+    color:#909296;
+}
+
+
+
+.scroller{
+    width:100%;
+    position: absolute;
+    bottom:10%;
+    left:0;
+    transition: opacity 2s;
+}
+
+.scroller i{
+    text-decoration:none;
+    color:#909296;
+
+
+
+}
+
+.socials i{
+    text-decoration:none;
+    color:#909296;
+}
+
+
+.aboutme-container{
+    height:100%;
+    background-color:#242529;
+    color:white;
+
+    padding-top:10px;
+    padding-bottom:10px;
+
+}
+
+.aboutme-container .row{
+    height:100%;
+}
+
+.aboutme-info{
+    position:relative;
+    left:0px;
+    transition:2s ease-in-out;
+}
+
+.aboutme-info h2{
+    margin-bottom:10%;
+    font-size:50px;
+    font-weight: bold;
+    color:#87bdd8
+
+}
+
+
+/* history tree css */
+
+
+
+.history-tree-outer{
+    height:80%;
+}
+
+.history-tree{
+    height:100%;
+
+    display:flex;
+}
+
+.tree-connector{
+    width:2px;
+    background-color:white;
+
+    position:relative;
+    left:49%;
+}
+
+
+
+.history-block-1 .tree-connector {
+    background-color:#90EE90;
+}
+.history-block-2 .tree-connector {
+    background-color:#f4a688;
+}
+.history-block-3 .tree-connector {
+    background-color:#87bdd8;
+}
+
+.active .tree-connector{
+    background-color:white;
+}
+
+.history-block-1 .tree-connector{
+    height:30%;
+}
+
+.history-block-2 .tree-connector{
+    height:20%;
+
+}
+
+.history-block-3 .tree-connector{
+    height:30%;
+
+}
+
+.history-block-2{
+
+    position:relative;
+    top:25%;
+}
+
+.history-block-3{
+    position:relative;
+    top:15%;
+
+}
+
+.history-tooltip p{
+    transform: rotate(-30deg);
+    color:#909296;
+    font-weight: bold;
+}
+
+
+.history-info-box{
+    display:none;
+    /* position:relative; */
+
+    width:100%;
+    height:50%;
+
+    /* width:50%;
+    height:50%; */
+
+    color:black;
+    background-color:white;
+    border-radius: 8px;
+
+    padding:30px;
+
+    overflow-x:scroll;
+
+
+}
+
+.history-info-set{
+    display:none;
+    height:80%;
+
+}
+
+
+
+
+.history-info-left{
+    width:15%;
+    height:100%;
+    border-right: 1px solid rgba(0,0,0,.125);
+}
+
+.experience-row li{
+    margin: 0px 12px 0px 12px;
+}
+
+.experience-row .card{
+    height: 100px;
+    width:175px;
+}
+
+.experience-row img{
+    width:75%
+}
+
+.experience-container, .experience-container .row{
+    height:100%;
+    background-color:#202124;
+}
+
+.experience-container .row{
+    padding: 4% 0 4% 0;
+}
+
+.experience-tab{
+    height:100%;
+    border-radius: 8px;
+
+}
+
+
+
+.experience-tab .experience-block{
+    height:20%;
+    width:100%;
+    /* background-color:#202021; */
+    background-color:#cccccc;
+
+    border: 1px solid rgba(0,0,0,.125);
+    border-top:none;
+
+
+    display:flex;
+    align-items:center;
+    justify-content: center;
+
+}
+
+
+
+.experience-tab img{
+    max-width:50%;
+
+}
+
+.experience-tab-connector{
+    height:100%;
+}
+
+.experience-connector{
+    height:20%;
+
+    display:flex;
+    align-items:center;
+    /* justify-content:center; */
+}
+
+.experience-connector > *{
+    background-color:#909296;
+
+    display:block;
+    height:2px;
+    width:0%;
+
+    /* display:none; */
+
+    transition:300ms linear;
+
+}
+
+.experience-block{
+    cursor: pointer;
+}
+
+.experience-block:first-of-type{
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top:1px solid rgba(0,0,0,.125);
+}
+
+.experience-block:last-of-type{
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+
+
+.experience-info{
+    background-color:#cccccc;
+    border-radius: 8px;
+    height:100%;
+
+    padding:50px;
+}
+
+.experience-block-info
+{
+    display:none;
+}
+
+.experience-block-placeholder{
+
+    font-size:37px;
+
+    height:100%;
+
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.experience-row-mobile{
+    display:none;
+}
+
+.experience-swiper{
+
+    /* display:flex; */
+
+    width:100%;
+    height:15%;
+
+    color:white;
+}
+
+.knowledge-container{
+    height:100%;
+    background-color:#202124;
+    color:white;
+}
+
+.knowledge-container .row{
+    height:33.33%;
+}
+
+.knowledge-container h2{
+    font-size: 50px;
+    font-weight: bold;
+    color: #87bdd8;
+}
+
+/* .knowledge-banner-box{
+    display:flex;
+    justify-content: center;
+} */
+
+.knowledge-banner{
+    height:30%;
+    width:50%;
+    background-color:#f4a688;
+
+    font-size:40px;
+    font-weight: bold;
+}
+
+.knowledge-row-3 .knowledge-banner{
+    background-color: #90EE90;
+}
+
+.knowledge-row-3 .knowledge-list-box{
+    direction:rtl;
+}
+
+.knowledge-list-box{
+    display:flex;
+    align-items: center;
+}
+
+.knowledge-list{
+    display:flex;
+
+    list-style-type:none;
+
+    margin:0;
+}
+
+.knowledge-list li{
+    padding:10px;
+
+}
+
+
+.contact-container
+{
+    height:100%;
+    background-color:#242529;
+}
+
+.contact-container .row{
+    height:100%;
+}
+
+.contact-box{
+     color:white;
+     width:30%;
+}
+
+
+
+
+.contact-box h2{
+    text-align:center;
+    margin-bottom:15%;
+    font-size:60px;
+    font-weight:bold;
+
+    color:#87bdd8;
+}
+
+.contact-box textarea{
+    max-height: 400px;
+}
+
+.contact-btn{
+    width:100%;
+
+    background-color:#87bdd8;
+    color:white;
+}
+
+
+
+
+@media only screen and (max-width: 992px){
+    .front-name-box
+    {
+        /* height:40%; */
+        padding: 40% 0 5% 0;
+    }
+
+    .history-info-box{
+        height:75%;
+    }
+
+    .aboutme-container .row > div{
+        height:50%;
+    }
+
+    .experience-row{
+        display:none;
+    }
+
+    .experience-row-mobile{
+        display:initial;
+    }
+
+    .contact-box{
+        width:80%;
+    }
+
+    .aboutme-info h2, .contact-box h2{
+        font-size:30px;
+    }
+
+
+}
